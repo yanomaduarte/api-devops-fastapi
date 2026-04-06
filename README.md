@@ -24,27 +24,30 @@ Clone o repositório e construa a imagem executando os comandos abaixo no termin
 git clone [https://github.com/yanomaduarte/api-devops-fastapi.git](https://github.com/yanomaduarte/api-devops-fastapi.git)
 cd api-devops-fastapi
 docker build -t minha-api-python .
-
+```
 2. Rodando o Container (Port Mapping)
 Inicie o serviço mapeando a porta 8000 da rede isolada do container para a porta 8000 da sua máquina:
+```bash
 docker run -p 8000:8000 minha-api-python
-
+```
 3. Acessando a API
 Com o container em execução, acesse as rotas através do seu navegador:
-
+```bash
 Status da API: http://localhost:8000/
 
 Seu Portfólio: http://localhost:8000/perfil
 
 Documentação Interativa (Swagger): http://localhost:8000/docs
-
+```
 🛠️ Estrutura do Projeto
+```bash
 .
 ├── main.py              # Código fonte da API (Rotas e Endpoints)
 ├── requirements.txt     # Dependências do Python (FastAPI, Uvicorn)
 ├── Dockerfile           # Receita de construção da imagem
 ├── .gitignore           # Arquivos temporários ignorados pelo Git
 └── README.md            # Documentação central do projeto
+```
 
 🧠 Aprendizados e Práticas Aplicadas
 Desenvolvimento Ágil: Uso do FastAPI para criar endpoints RESTful focados em performance.
