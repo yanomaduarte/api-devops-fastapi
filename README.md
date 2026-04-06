@@ -23,12 +23,12 @@ Clone o repositório e construa a imagem executando os comandos abaixo no termin
 ```bash
 git clone [https://github.com/yanomaduarte/api-devops-fastapi.git](https://github.com/yanomaduarte/api-devops-fastapi.git)
 cd api-devops-fastapi
-docker build -t minha-api-python .
+docker build -t my-python-api .
 ```
 2. Rodando o Container (Port Mapping)
 Inicie o serviço mapeando a porta 8000 da rede isolada do container para a porta 8000 da sua máquina:
 ```bash
-docker run -p 8000:8000 minha-api-python
+docker run -p 8000:8000 my-python-api
 ```
 3. Acessando a API
 Com o container em execução, acesse as rotas através do seu navegador:
